@@ -1,0 +1,33 @@
+.mat-pink {
+  background-color: rgb(218, 132, 221);
+}
+
+
+::ng-deep.mat-form-field-ripple {
+  background-color: rgb(218, 132, 221) !important;;
+ }
+::ng-deep.mat-focused .mat-form-field-label {
+  color: rgb(218, 132, 221) !important;
+ }
+ ::ng-deep.mat-form-field-label {
+  color: rgb(218, 132, 221) !important;
+ }
+ ::ng-deep.mat-form-field-underline {
+  background-color: rgb(218, 132, 221) !important;
+}
+
+::ng-deep.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgb(218, 132, 221);
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: rgb(218, 132, 221) !important;
+}
+
+::ng-deep .mat-form-field-wrapper {
+  padding-bottom: 0.34375em;
+}
+
+.a:hover{
+
+}

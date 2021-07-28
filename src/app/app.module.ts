@@ -14,12 +14,18 @@ import { OverviewService } from './overview/services/overview.service';
 import { RegisterComponent } from './login/register/register.component';
 import { CharacterComponent } from './user-settings/character/character.component';
 import { HeaderComponent } from './components/header/header.component';
+import { SelecItensComponent } from './selec-itens/selec-itens.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { ThanksComponent } from './thanks/thanks.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    SelecItensComponent,
+    ConfirmationComponent,
+    ThanksComponent
   ],
   imports: [
     ComponentsModule,

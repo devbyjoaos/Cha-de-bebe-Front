@@ -1,26 +1,19 @@
-<div style="background-image: url(https://i.imgur.com/P7TgD2J.jpg) ; background-size: cover; height: 100%; display: flex; align-items: center; justify-content: center;">
-<mat-card style="background-color: white;">
-    <mat-card-title style="opacity: 1 !important; text-align: center; margin-bottom: 10px; color: coral;">Login</mat-card-title>
+<div style="background: url(../../assets/Cabrito_Joao_1920x1080.jpg); background-size: cover; height: 100%; display: flex; align-items: center; justify-content: center;">
+  <mat-card style="background-color: white; bottom: 0;">
+    <mat-card-title style="opacity: 1 !important; text-align: center; margin-bottom: 10px; color: coral;">
+      <img width="320" height="240" src="../../assets/Capturar (1).png">
+    </mat-card-title>
     <mat-card-content style="opacity: 1 !important; color: black;">
-      <div style="font-size: 10px; text-align: center;">Náo tem uma conta? <a style="color: black;" href="registro">clique aqui</a></div>
-      <div style="font-size: 10px; text-align: center; margin-bottom: 10px;">Cadastre-se agora grátis</div>
-
-        <form>
-          <div class="row" style="justify-content: center; display: flex;">
-        <mat-form-field style="width: 80%;">
-            <mat-label style="justify-content: center; display: flex;">username</mat-label>
-            <input matInput [(ngModel)]="loginDto.nickname" name="nickname">
-        </mat-form-field>
-      </div>
-      <div class="row" style="justify-content: center; display: flex;">
-        <mat-form-field style="width: 80%;" floatLabel="never">
-            <mat-label style="justify-content: center; display: flex;">password</mat-label>
-            <input matInput type="password"  (keyup.enter)="loginClick()" [(ngModel)]="loginDto.password" name="password">
-        </mat-form-field>
-      </div>
-    </form>
+      <form>
+        <div class="row" style="justify-content: center; display: flex;">
+          <mat-form-field style="width: 80%;">
+            <mat-label style="justify-content: center; display: flex;">Nome</mat-label>
+            <input matInput [(ngModel)]="name" name="nickname">
+          </mat-form-field>
+        </div>
+      </form>
     <div class="row" style="justify-content: center; display: flex;">
-    <button mat-raised-button style="width: 80%" color="warn" (click)="loginClick()">Entrar</button>
+    <button mat-raised-button style="width: 80%" color="primary" (click)="loginClick()">Entrar</button>
   </div>
     </mat-card-content>
 </mat-card>

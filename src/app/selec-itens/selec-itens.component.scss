@@ -1,0 +1,39 @@
+::ng-deep .mat-checkbox-frame {
+  border-color: rgb(218, 132, 221);
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent {
+  .mat-checkbox-background {
+    background-color: rgb(218, 132, 221)!important;
+  }
+}
+
+::ng-deep .mat-checkbox-checkmark-path {
+  stroke: #ffffff !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(219, 108, 223);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(218, 132, 221);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.mat-pink {
+  background-color: rgb(218, 132, 221);
+}
+
+::ng-deep .mat-spinner circle {
+  stroke: rgb(218, 132, 221);
+}

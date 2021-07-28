@@ -1,0 +1,22 @@
+<div style="background: url(../../assets/Cabrito_Joao_1920x1080.jpg); background-size: cover; height: 100%; display: flex; align-items: center; justify-content: center;">
+  <mat-card style="background-color: white; bottom: 0; max-height: 70% !important; color: black; min-height: 35%; align-content: space-between; min-width: 20%">
+    <mat-card-title style="opacity: 1 !important; text-align: center; margin-bottom: 10px; color: rgb(226, 138, 219);">
+      {{name}}
+    </mat-card-title>
+    <mat-card-content>
+      <div class="row" *ngFor="let product of productList" style="align-content: center; margin-top: 0.3em; margin-bottom: 0.3em;">
+          <p style="text-align: center; font-size: 16px; align-items: center;" readonly="true" disabled="true">
+            <mat-icon style="color: rgb(226, 138, 219);">star_border</mat-icon>
+            {{product.name}}
+            <mat-icon style="color: rgb(226, 138, 219);">star_border</mat-icon>
+          </p>
+      </div>
+      <p style="text-align: center; font-size: 16px; align-items: center; margin-top: 0.6em; margin-bottom: 0.3em;" readonly="true" disabled="true">+ Fralda M ou G</p>
+    </mat-card-content>
+    <mat-card-footer style="display: flex; justify-content: center; min-height: 10%;">
+      <img width="80" height="80"  style="bottom: 0; position: absolute; margin-right: 15em;" src="../../assets/llama-llama (1).png">
+      <button mat-raised-button color="pink" style="margin-top: 5px; margin-bottom: 5px; bottom: 0; position: absolute" (click)="conclude()">Concluir</button>
+      <img width="80" height="80" style="bottom: 0; position: absolute; margin-left: 15em;" src="../../assets/llama-llama.png">
+    </mat-card-footer>
+  </mat-card>
+</div>

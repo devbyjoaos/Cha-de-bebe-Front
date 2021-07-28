@@ -12,6 +12,7 @@ import { SnackBarService } from '../components/snackbar/snackbar.service';
 })
 export class LoginComponent implements OnInit {
 
+  name: String;
   loginDto = new LoginDto();
   logou: boolean;
   constructor(
@@ -24,16 +25,7 @@ export class LoginComponent implements OnInit {
   }
 
   loginClick(){
-    this.loginService.login(this.loginDto).subscribe(
-      result => {
-          this.router.navigate(['inicio']);
-      },
-      error => {
-        this.snackbar.error('Usuário ou senha inválidos.');
-      }
-    );
-
-
+    this.router.navigate(["escolha", this.name]);
   }
 
 }
