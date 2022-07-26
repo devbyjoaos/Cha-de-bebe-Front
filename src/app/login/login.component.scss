@@ -10,3 +10,8 @@
  ::ng-deep.mat-form-field-underline {
   background-color: black !important;
 }
+
+::ng-deep .mat-flat-button, .mat-raised-button, .mat-fab, .mat-mini-fab {
+  color: #fff;
+  background-color: rgba(43,95,235,1) !important;
+}
